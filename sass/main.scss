@@ -1,0 +1,15 @@
+$light_grey: #353535;
+
+@import './components/__header.scss';
+@import './home/__hero.scss';
+@import './home/__function.scss';
+
+*
+{
+    margin: 0;
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
