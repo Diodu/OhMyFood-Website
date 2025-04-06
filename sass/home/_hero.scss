@@ -10,12 +10,22 @@
         padding: 40px 0;
         background-color: #f6f6f6;
 
+
+        @include responsive(tablet){
+            gap: 40px;
+        }
+
+
         h1{
             font-size: 24px;
             font-weight: 700;
             text-align: center;
             width: 70%;
             color: black;
+
+            @include responsive(tablet){
+                font-size: 36px;
+            }
         }
 
         p{
@@ -23,6 +33,10 @@
             font-weight: 300;
             text-align: center;
             width: 90%;
+
+            @include responsive(tablet){
+                font-size: 24px;
+            }
         }
 
         button{
@@ -31,6 +45,7 @@
             padding: 15px 20px;
             border-radius: 100px;    
             border: none;      
+            font-size: 16px;
 
         }
     }

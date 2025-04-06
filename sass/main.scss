@@ -1,15 +1,22 @@
-$light_grey: #353535;
-
-@import './components/__header.scss';
-@import './home/__hero.scss';
-@import './home/__function.scss';
 
 *
 {
     margin: 0;
-}
-
-body
-{
+    box-sizing: border-box; 
     font-family: 'Roboto', sans-serif;
-}
+
+} 
+
+@import 'variables';
+@import 'mixins';
+
+
+@import './components/header';
+@import './components/footer';
+
+@import './home/hero';
+@import './home/process';
+@import './home/restaurants';
+
+@import './restaurant/hero';
+@import './restaurant/menu';
