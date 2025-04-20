@@ -1,0 +1,44 @@
+.dish-card {
+    background-color: white;
+    border-radius: $radius-small;
+    box-shadow: $shadow-standard;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-small;
+    cursor: pointer;
+    position: relative;
+
+    .dish-info {
+      flex: 1;
+      
+      h3 {
+        font-size: $font-size-medium;
+        font-weight: $weight-medium;
+        margin: 0 0 5px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      
+      p {
+        font-size: $font-size-small;
+        font-weight: $weight-light;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    
+    .dish-price {
+      font-weight: $weight-bold;
+      font-size: $font-size-small;
+      position: absolute; 
+      bottom: $spacing-small;
+      right: $spacing-small;
+      
+      p {
+        margin: 0;
+        color: $light-grey;
+      }
+    }
+  }

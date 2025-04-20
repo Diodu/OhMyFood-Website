@@ -1,9 +1,54 @@
 // Couleurs
-$light_grey: #353535;
+$light-grey: #353535;
+$grey-background: #f6f6f6;
+$grey-location: #eaeaea;
+$grey-icon: #7e7e7e;
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$badge-text: #008766;
+
+// Dégradés
+$gradient-primary: linear-gradient($secondary -11.44%, $primary 123.93%);
+$gradient-button: linear-gradient($secondary, $primary);
 
 // Polices
+$font-primary: 'Roboto', sans-serif;
+$font-title: 'Shrikhand', cursive;
+
+// Tailles de police
+$font-size-large: 24px;
+$font-size-medium: 18px;
+$font-size-regular: 16px;
+$font-size-small: 15px;
+$font-size-xs: 14px;
+
+// Font-weights
+$weight-bold: 700;
+$weight-medium: 500;
+$weight-regular: 400;
+$weight-light: 300;
+
+// Espacements
+$spacing-large: 40px;
+$spacing-medium: 20px;
+$spacing-small: 15px;
+
+// Border-radius
+$radius-large: 40px;
+$radius-medium: 20px;
+$radius-small: 15px;
+$radius-button: 100px;
+
+// Box-shadows
+$shadow-standard: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+$shadow-header: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$shadow-light: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+
+// Transitions
+$transition-standard: all 0.3s ease;
 
 // Breakpoints
 $breakpoint-desktop: 1024px;
 $breakpoint-tablet: 768px;
-
+$breakpoint-mobile: 480px;

@@ -1,0 +1,67 @@
+.button-heart {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: $spacing-medium;
+    z-index: 10;
+    @include responsive(tablet) {
+      margin-right: 0; 
+      margin-top: 5px;
+    }
+    
+    i 
+    {
+        font-size: $font-size-large;
+        color: transparent;
+        -webkit-text-stroke: 1px black;
+        text-stroke: 1px black;
+
+        &:hover
+        {
+            transition: $transition-standard;
+            background: $gradient-button;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-stroke: 0;
+        }
+
+    }
+
+    &--restaurant{
+        margin-right: $spacing-small;
+        margin-bottom: 25px;
+    } 
+}
+
+.button-primary{
+    background: $gradient-primary;
+    color: white;
+    padding: $spacing-small $spacing-medium;
+    border-radius: $radius-button;    
+    border: none;      
+    font-size: $font-size-regular;
+    &:hover{
+        background: $gradient-primary;
+        opacity: 0.8;
+        transition: $transition-standard;
+    }
+}
+
+.command-button {
+    background: $gradient-button;
+    color: white;
+    border: none;
+    padding: $spacing-small 50px;
+    border-radius: 30px;
+    font-size: $font-size-regular;
+    font-weight: $weight-medium;
+    cursor: pointer;
+    box-shadow: $shadow-standard;
+    transition: $transition-standard;
+    &:hover{
+        background: $gradient-button;
+        opacity: 0.8;
+        transition: $transition-standard;
+    }
+  }

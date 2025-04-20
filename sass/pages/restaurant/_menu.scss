@@ -1,0 +1,84 @@
+.menu {
+    background-color: $grey-background;
+    border-radius: $radius-large $radius-large 0 0;
+    position: relative;
+    margin-top: -$spacing-large;
+    padding-bottom: $spacing-large;
+    
+    @include responsive(tablet) {
+      width: 80%;
+      margin: -$spacing-large auto 0;
+    }
+  
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px $spacing-medium 0;
+      @include responsive(tablet) {
+        width: fit-content; 
+        margin: 0 auto; 
+        justify-content: center;
+        gap: $spacing-small; 
+      }
+      
+      h1 {
+        font-family: $font-title;
+        font-size: 28px;
+        font-weight: $weight-regular;
+        margin: 0;
+
+        @include responsive(tablet){
+          margin-right: $spacing-small;
+          padding: 30px 0;
+        }
+      }
+    }
+    
+    &-content {
+      padding: 0 $spacing-medium;
+    }
+    
+    .menu-category {
+      margin: $spacing-large 0;
+
+      @include responsive(tablet){
+        width: 70%;
+        margin: auto;
+        margin-bottom: $spacing-large;
+      }
+
+      .category-title {
+        font-size: $font-size-regular;
+        font-weight: $weight-light;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 8px;
+        margin-bottom: $spacing-medium;
+        
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: $spacing-large;
+          height: 3px;
+          background-color: $tertiary;
+          border-radius: 2px;
+        }
+      }
+      
+      .dishes {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-small;
+      }
+    }
+    
+    &-action {
+      text-align: center;
+      margin-top: $spacing-large;
+    }
+  }
+  

@@ -1,11 +1,24 @@
-@mixin responsive($breakpoint) {
-    @if $breakpoint == "desktop" {
-        @media (min-width: $breakpoint-desktop) {
+@mixin responsive($breakpoint) 
+{
+    @if $breakpoint == "desktop" 
+    {
+        @media (min-width: $breakpoint-desktop) 
+        {
             @content;
         }
-    }@else if $breakpoint == "tablet" {
-        @media (min-width: $breakpoint-tablet) {
+    }
+    @else if $breakpoint == "tablet" 
+    {
+        @media (min-width: $breakpoint-tablet) 
+        {
             @content;
         }
+    }
+    @else if $breakpoint == "mobile"
+    {
+        @media (min-width: $breakpoint-mobile)
+        {
+            @content;
+        }   
     }
 }

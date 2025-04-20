@@ -1,0 +1,38 @@
+.restaurants
+{
+    background-color: $grey-background;
+    margin: 0 auto;
+    padding: $spacing-large $spacing-medium; 
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-medium;
+    overflow-x: hidden;
+    width: 100%; 
+    box-sizing: border-box;
+
+    h2
+    {
+        font-size: $font-size-large;
+        font-weight: $weight-bold;
+
+        @include responsive(tablet){
+            width: 80%;
+            margin: auto;
+        }
+    }
+    .restaurants-list
+    {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-medium;
+
+        @include responsive(tablet){
+            width: 80%;
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: $spacing-large;
+        }
+    }
+    
+}

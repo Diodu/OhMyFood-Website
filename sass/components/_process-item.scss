@@ -1,0 +1,41 @@
+.process-item {
+    display: flex;
+    align-items: center;
+    gap: $spacing-medium;
+    padding: $spacing-medium $spacing-medium;
+    border-radius: $radius-medium;
+    background-color: $grey-background;
+    box-shadow: $shadow-standard;
+    position: relative;
+    margin-left: $spacing-small;
+
+    @include responsive(tablet){
+        width: 33%;
+    }
+
+    .process-item-number {
+        background-color: $primary;
+        color: white;
+        width: $font-size-large;
+        height: $font-size-large;
+        border-radius: 50%;
+        font-weight: $weight-medium;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -12px;
+        font-size: $font-size-xs;
+    }
+    
+    i {
+        color: $grey-icon;
+        font-size: $spacing-medium;
+        margin-left: $spacing-small;
+    }
+    
+    p {
+        font-weight: $weight-medium;
+        font-size: $font-size-regular;
+    }
+}

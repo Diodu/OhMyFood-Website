@@ -1,22 +1,28 @@
+@import 'variables';
+@import 'mixins';
 
 *
 {
     margin: 0;
     box-sizing: border-box; 
-    font-family: 'Roboto', sans-serif;
-
+    font-family: $font-primary;
 } 
 
-@import 'variables';
-@import 'mixins';
-
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 @import './components/header';
 @import './components/footer';
+@import './components/buttons';
+@import './components/process-item';
+@import './components/restaurent-card';
+@import './components/dishes-card';
 
-@import './home/hero';
-@import './home/process';
-@import './home/restaurants';
+@import './pages/home/hero';
+@import './pages/home/process';
+@import './pages/home/restaurants';
 
-@import './restaurant/hero';
-@import './restaurant/menu';
+@import './pages/restaurant/hero';
+@import './pages/restaurant/menu';

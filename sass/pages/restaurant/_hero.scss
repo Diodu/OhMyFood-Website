@@ -2,13 +2,16 @@
     width: 100%;
     height: auto;
     overflow: hidden;
-    position: relative;
-    
+    position: relative;    
+
     img {
       width: 100%;
       height: 300px;
       object-fit: cover;
-      display: block;
+      
+      @include responsive(tablet){
+        height: 400px;
+      }
     }
   }
   

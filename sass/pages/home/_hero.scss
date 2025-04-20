@@ -1,0 +1,39 @@
+.hero{
+    color: $light-grey;
+    .reserve{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: $spacing-medium;
+        padding: $spacing-large 0;
+        background-color: $grey-background;
+
+        @include responsive(tablet){
+            gap: $spacing-large;
+        }
+
+        h1{
+            font-size: $font-size-large;
+            font-weight: $weight-bold;
+            text-align: center;
+            width: 70%;
+            color: black;
+
+            @include responsive(tablet){
+                font-size: 36px;
+            }
+        }
+
+        p{
+            font-size: $font-size-medium;
+            font-weight: $weight-light;
+            text-align: center;
+            width: 90%;
+
+            @include responsive(tablet){
+                font-size: $font-size-large;
+            }
+        }
+    }
+}
