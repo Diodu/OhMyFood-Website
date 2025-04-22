@@ -1,3 +1,26 @@
+.heart-checkbox
+{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.heart-checkbox:checked + .heart-label i,
+.heart-checkbox:checked + button i {
+    background: $gradient-heart;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0;
+    color: transparent;
+    transform: scale(1.1);
+}
+
+.heart-label
+{
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
 .button-heart {
     background: none;
     border: none;
@@ -5,6 +28,8 @@
     padding: 0;
     margin-right: $spacing-medium;
     z-index: 10;
+    position: relative;
+
     @include responsive(tablet) {
       margin-right: 0; 
       margin-top: 5px;
@@ -15,16 +40,8 @@
         font-size: $font-size-large;
         color: transparent;
         -webkit-text-stroke: 1px black;
-        text-stroke: 1px black;
-
-        &:hover
-        {
-            transition: $transition-standard;
-            background: $gradient-button;
-            -webkit-background-clip: text;
-            color: transparent;
-            -webkit-text-stroke: 0;
-        }
+        transition: all 0.3s ease;
+        transform-origin: center;
 
     }
 
@@ -41,6 +58,7 @@
     border-radius: $radius-button;    
     border: none;      
     font-size: $font-size-regular;
+    transition: $transition-standard;
     &:hover{
         background: $gradient-primary;
         opacity: 0.8;

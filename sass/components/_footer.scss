@@ -3,6 +3,10 @@ footer {
     color: white;
     padding: $spacing-medium $spacing-medium;
     
+    li {
+        list-style: none;
+    }
+
     .content {
       display: flex;
       flex-direction: column;

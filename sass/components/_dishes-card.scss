@@ -1,4 +1,5 @@
-.dish-card {
+.dish-card 
+{
     background-color: white;
     border-radius: $radius-small;
     box-shadow: $shadow-standard;
@@ -8,37 +9,128 @@
     padding: $spacing-small;
     cursor: pointer;
     position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 
-    .dish-info {
+    .dish-info 
+    {
       flex: 1;
+      transition: all 0.3s ease-in-out;
+      width: 100%;
+      overflow: hidden;
       
-      h3 {
+      h3 
+      {
         font-size: $font-size-medium;
         font-weight: $weight-medium;
         margin: 0 0 5px;
         white-space: nowrap;
         text-overflow: ellipsis;
+        overflow: hidden;
       }
       
-      p {
+      p 
+      {
         font-size: $font-size-small;
         font-weight: $weight-light;
         margin: 0;
         white-space: nowrap;
         text-overflow: ellipsis;
+        overflow: hidden;
       }
     }
     
-    .dish-price {
+    .dish-price 
+    {
       font-weight: $weight-bold;
       font-size: $font-size-small;
-      position: absolute; 
-      bottom: $spacing-small;
-      right: $spacing-small;
+      margin-left: auto;
+      margin-right: 0;
+      transition: transform 0.3s ease-in-out;
       
-      p {
+      p 
+      {
         margin: 0;
         color: $light-grey;
+      }
+    }
+
+    .dish-check 
+    {
+      position: absolute;
+      right: -80px;
+      top: 0;
+      background-color: $tertiary;
+      height: 100%;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease-in-out;
+
+      i 
+      {
+        color: white;
+        font-size: 20px;
+        transform: rotate(0);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    .dish-checkbox 
+    {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .dish-card-overlay 
+    {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .dish-checkbox:checked ~ .dish-check {
+      transform: translateX(-80px);
+    }
+
+    .dish-checkbox:checked ~ .dish-info {
+      width: calc(100% - 80px);
+    }
+
+    .dish-checkbox:checked ~ .dish-price {
+      transform: translateX(-60px);
+    }
+
+    @include responsive(desktop) {
+      .dish-card-overlay {
+        pointer-events: none;
+      }
+      
+      .dish-checkbox:checked ~ .dish-check,
+      .dish-checkbox:checked ~ .dish-info,
+      .dish-checkbox:checked ~ .dish-price {
+        transform: none;
+        width: 100%;
+      }
+
+      &:hover {
+        .dish-check {
+          transform: translateX(-80px);
+        }
+  
+        .dish-info {
+          width: calc(100% - 80px);
+        }
+  
+        .dish-price {
+          transform: translateX(-60px);
+        }
       }
     }
   }
