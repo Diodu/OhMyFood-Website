@@ -32,6 +32,9 @@
         color: $grey-icon;
         font-size: $spacing-medium;
         margin-left: $spacing-small;
+        &.colored{
+            color: $primary;
+        }
     }
     
     p {

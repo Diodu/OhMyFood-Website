@@ -371,6 +371,10 @@ footer .content .content-links .content-links-item i, footer .content .content-l
   margin-left: 15px;
 }
 
+.process-item i.colored {
+  color: #9356DC;
+}
+
 .process-item p {
   font-weight: 500;
   font-size: 16px;
