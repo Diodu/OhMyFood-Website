@@ -1,18 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
-*
-{
-    margin: 0;
-    box-sizing: border-box; 
-    font-family: $font-primary;
-} 
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
+@import './base';
 @import './components/header';
 @import './components/footer';
 @import './components/buttons';
@@ -25,5 +14,4 @@ a {
 @import './pages/home/process';
 @import './pages/home/restaurants';
 
-@import './pages/restaurant/hero';
 @import './pages/restaurant/menu';

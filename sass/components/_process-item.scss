@@ -9,6 +9,13 @@
     position: relative;
     margin-left: $spacing-small;
 
+    &:hover{
+        cursor: default;
+        i{
+            color: $primary;
+        }
+    }
+
     @include responsive(tablet){
         width: 33%;
     }
@@ -32,9 +39,6 @@
         color: $grey-icon;
         font-size: $spacing-medium;
         margin-left: $spacing-small;
-        &.colored{
-            color: $primary;
-        }
     }
     
     p {

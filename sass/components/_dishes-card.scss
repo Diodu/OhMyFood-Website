@@ -101,11 +101,20 @@
 
     .dish-checkbox:checked ~ .dish-info {
       width: calc(100% - 80px);
+
+      h3,
+      p {
+        max-width: 75%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
 
     .dish-checkbox:checked ~ .dish-price {
       transform: translateX(-60px);
     }
+
 
     @include responsive(desktop) {
       .dish-card-overlay {
