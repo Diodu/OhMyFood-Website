@@ -21,7 +21,6 @@ header {
   position: relative;
   color: #353535;
 }
-
 header .arrow-back {
   position: absolute;
   left: 20px;
@@ -39,15 +38,12 @@ header .arrow-back {
           justify-content: center;
   z-index: 10;
 }
-
 header .arrow-back a {
   color: #353535;
 }
-
 header .arrow-back i {
   font-size: 20px;
 }
-
 header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,30 +57,25 @@ header .logo {
           box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   z-index: 2;
 }
-
 @media (min-width: 768px) {
   header .logo {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
 }
-
 header .logo img {
   width: 40%;
 }
-
 @media (min-width: 768px) {
   header .logo img {
     width: 20%;
   }
 }
-
 @media (min-width: 1024px) {
   header .logo img {
     width: 10%;
   }
 }
-
 header .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,7 +96,6 @@ header .location {
   position: relative;
   z-index: 1;
 }
-
 @media (min-width: 768px) {
   header .location {
     -webkit-box-shadow: none;
@@ -118,7 +108,6 @@ footer {
   color: white;
   padding: 20px 20px;
 }
-
 footer .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,19 +120,16 @@ footer .content {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 footer .content .content-logo {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
 }
-
 footer .content .content-logo img {
   width: 110px;
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
-
 footer .content .content-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,7 +140,6 @@ footer .content .content-links {
           flex-direction: column;
   gap: 15px;
 }
-
 footer .content .content-links .content-links-item,
 footer .content .content-links a {
   display: -webkit-box;
@@ -171,13 +156,11 @@ footer .content .content-links a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 footer .content .content-links .content-links-item i,
 footer .content .content-links a i {
   width: 20px;
   font-size: 16px;
 }
-
 @media (min-width: 1024px) {
   footer .content {
     -webkit-box-orient: horizontal;
@@ -245,14 +228,12 @@ footer .content .content-links a i {
   z-index: 10;
   position: relative;
 }
-
 @media (min-width: 768px) {
   .button-heart {
     margin-right: 0;
     margin-top: 5px;
   }
 }
-
 .button-heart i {
   font-size: 24px;
   color: transparent;
@@ -262,7 +243,6 @@ footer .content .content-links a i {
   -webkit-transform-origin: center;
           transform-origin: center;
 }
-
 .button-heart--restaurant {
   margin-right: 15px;
   margin-bottom: 25px;
@@ -279,7 +259,6 @@ footer .content .content-links a i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .button-primary:hover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(-11.44%, #FF79DA), color-stop(123.93%, #9356DC));
   background: linear-gradient(#FF79DA -11.44%, #9356DC 123.93%);
@@ -303,7 +282,6 @@ footer .content .content-links a i {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .command-button:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
@@ -328,21 +306,17 @@ footer .content .content-links a i {
   position: relative;
   margin-left: 15px;
 }
-
 .process-item:hover {
   cursor: default;
 }
-
 .process-item:hover i {
   color: #9356DC;
 }
-
 @media (min-width: 768px) {
   .process-item {
     width: 33%;
   }
 }
-
 .process-item .process-item-number {
   background-color: #9356DC;
   color: white;
@@ -363,13 +337,11 @@ footer .content .content-links a i {
   left: -12px;
   font-size: 14px;
 }
-
 .process-item i {
   color: #7e7e7e;
   font-size: 20px;
   margin-left: 15px;
 }
-
 .process-item p {
   font-weight: 500;
   font-size: 16px;
@@ -389,13 +361,11 @@ footer .content .content-links a i {
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-
 @media (min-width: 768px) {
   .restaurant-item {
     width: 95%;
   }
 }
-
 .restaurant-item--new::before {
   content: "Nouveau";
   position: absolute;
@@ -409,15 +379,12 @@ footer .content .content-links a i {
   font-size: 14px;
   z-index: 1;
 }
-
 .restaurant-item .restaurant-image {
   width: 100%;
 }
-
 .restaurant-item .restaurant-image a {
   display: block;
 }
-
 .restaurant-item .restaurant-image img {
   border-radius: 15px 15px 0 0;
   width: 100%;
@@ -425,13 +392,11 @@ footer .content .content-links a i {
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 @media (min-width: 768px) {
   .restaurant-item .restaurant-image img {
     height: 250px;
   }
 }
-
 .restaurant-item .elements {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,18 +406,15 @@ footer .content .content-links a i {
           justify-content: space-between;
   padding: 0 15px;
 }
-
 .restaurant-item .elements .restaurant-link {
   text-decoration: none;
   color: inherit;
 }
-
 .restaurant-item .elements .restaurant-item-text h3 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
 }
-
 .restaurant-item .elements .restaurant-item-text p {
   font-size: 17px;
   font-weight: 300;
@@ -480,7 +442,6 @@ footer .content .content-links a i {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .dish-card .dish-info {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -490,7 +451,6 @@ footer .content .content-links a i {
   width: 100%;
   overflow: hidden;
 }
-
 .dish-card .dish-info h3 {
   font-size: 18px;
   font-weight: 500;
@@ -499,7 +459,6 @@ footer .content .content-links a i {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .dish-card .dish-info p {
   font-size: 15px;
   font-weight: 300;
@@ -508,7 +467,6 @@ footer .content .content-links a i {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .dish-card .dish-price {
   font-weight: 700;
   font-size: 15px;
@@ -519,12 +477,10 @@ footer .content .content-links a i {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
-
 .dish-card .dish-price p {
   margin: 0;
   color: #353535;
 }
-
 .dish-card .dish-check {
   position: absolute;
   right: -80px;
@@ -546,7 +502,6 @@ footer .content .content-links a i {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
-
 .dish-card .dish-check i {
   color: white;
   font-size: 20px;
@@ -557,13 +512,11 @@ footer .content .content-links a i {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
-
 .dish-card .dish-checkbox {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
-
 .dish-card .dish-card-overlay {
   position: absolute;
   top: 0;
@@ -573,16 +526,13 @@ footer .content .content-links a i {
   cursor: pointer;
   z-index: 1;
 }
-
 .dish-card .dish-checkbox:checked ~ .dish-check {
   -webkit-transform: translateX(-80px);
           transform: translateX(-80px);
 }
-
 .dish-card .dish-checkbox:checked ~ .dish-info {
   width: calc(100% - 80px);
 }
-
 .dish-card .dish-checkbox:checked ~ .dish-info h3,
 .dish-card .dish-checkbox:checked ~ .dish-info p {
   max-width: 75%;
@@ -590,12 +540,10 @@ footer .content .content-links a i {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .dish-card .dish-checkbox:checked ~ .dish-price {
   -webkit-transform: translateX(-60px);
           transform: translateX(-60px);
 }
-
 @media (min-width: 1024px) {
   .dish-card .dish-card-overlay {
     pointer-events: none;
@@ -640,7 +588,6 @@ footer .content .content-links a i {
   -webkit-animation: loader-animation 3s ease-in-out forwards;
           animation: loader-animation 3s ease-in-out forwards;
 }
-
 .loader .loader-circle {
   width: 120px;
   height: 120px;
@@ -652,9 +599,8 @@ footer .content .content-links a i {
           animation: loader-circle-animation 1.5s ease-in-out infinite;
   position: relative;
 }
-
 .loader .loader-circle::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -697,7 +643,6 @@ footer .content .content-links a i {
     visibility: hidden;
   }
 }
-
 @-webkit-keyframes loader-circle-animation {
   0% {
     -webkit-transform: scale(1);
@@ -712,7 +657,6 @@ footer .content .content-links a i {
             transform: scale(1);
   }
 }
-
 @keyframes loader-circle-animation {
   0% {
     -webkit-transform: scale(1);
@@ -727,11 +671,9 @@ footer .content .content-links a i {
             transform: scale(1);
   }
 }
-
 .hero {
   color: #353535;
 }
-
 .hero .reserve {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,13 +692,11 @@ footer .content .content-links a i {
   padding: 40px 0;
   background-color: #f6f6f6;
 }
-
 @media (min-width: 768px) {
   .hero .reserve {
     gap: 40px;
   }
 }
-
 .hero .reserve h1 {
   font-size: 24px;
   font-weight: 700;
@@ -764,20 +704,17 @@ footer .content .content-links a i {
   width: 70%;
   color: black;
 }
-
 @media (min-width: 768px) {
   .hero .reserve h1 {
     font-size: 36px;
   }
 }
-
 .hero .reserve p {
   font-size: 18px;
   font-weight: 300;
   text-align: center;
   width: 90%;
 }
-
 @media (min-width: 768px) {
   .hero .reserve p {
     font-size: 24px;
@@ -788,14 +725,12 @@ footer .content .content-links a i {
   width: 100%;
   padding: 40px 20px;
 }
-
 @media (min-width: 768px) {
   .process {
     width: 80%;
     margin: 40px auto;
   }
 }
-
 .process .process-list {
   padding: 30px 0;
   display: -webkit-box;
@@ -807,7 +742,6 @@ footer .content .content-links a i {
           flex-direction: column;
   gap: 20px;
 }
-
 @media (min-width: 768px) {
   .process .process-list {
     -webkit-box-orient: horizontal;
@@ -835,19 +769,16 @@ footer .content .content-links a i {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 .restaurants h2 {
   font-size: 24px;
   font-weight: 700;
 }
-
 @media (min-width: 768px) {
   .restaurants h2 {
     width: 80%;
     margin: auto;
   }
 }
-
 .restaurants .restaurants-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -858,15 +789,12 @@ footer .content .content-links a i {
           flex-direction: column;
   gap: 20px;
 }
-
 @media (min-width: 768px) {
   .restaurants .restaurants-list {
     width: 80%;
     margin: 10px auto;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
 }
@@ -877,20 +805,17 @@ footer .content .content-links a i {
   overflow: hidden;
   position: relative;
 }
-
 .main .hero img {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 @media (min-width: 768px) {
   .main .hero img {
     height: 400px;
   }
 }
-
 .main .menu {
   background-color: #f6f6f6;
   border-radius: 40px 40px 0 0;
@@ -898,14 +823,12 @@ footer .content .content-links a i {
   margin-top: -40px;
   padding-bottom: 40px;
 }
-
 @media (min-width: 768px) {
   .main .menu {
     width: 80%;
     margin: -40px auto 0;
   }
 }
-
 .main .menu-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -918,7 +841,6 @@ footer .content .content-links a i {
           align-items: center;
   padding: 30px 20px 0;
 }
-
 @media (min-width: 768px) {
   .main .menu-header {
     width: -webkit-fit-content;
@@ -931,47 +853,39 @@ footer .content .content-links a i {
     gap: 15px;
   }
 }
-
 .main .menu-header h1 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   font-weight: 400;
   margin: 0;
 }
-
 @media (min-width: 768px) {
   .main .menu-header h1 {
     margin-right: 15px;
     padding: 30px 0;
   }
 }
-
 .main .menu-content {
   padding: 0 20px;
 }
-
 .main .menu .menu-category {
   opacity: 0;
   -webkit-animation: show-menu-category 1.5s ease-in-out forwards;
           animation: show-menu-category 1.5s ease-in-out forwards;
   margin: 40px 0;
 }
-
 .main .menu .menu-category:nth-child(1) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-
 .main .menu .menu-category:nth-child(2) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
-
 .main .menu .menu-category:nth-child(3) {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
-
 @media (min-width: 768px) {
   .main .menu .menu-category {
     width: 70%;
@@ -979,7 +893,6 @@ footer .content .content-links a i {
     margin-bottom: 40px;
   }
 }
-
 .main .menu .menu-category .category-title {
   font-size: 16px;
   font-weight: 300;
@@ -989,7 +902,6 @@ footer .content .content-links a i {
   padding-bottom: 8px;
   margin-bottom: 20px;
 }
-
 .main .menu .menu-category .category-title::after {
   content: "";
   position: absolute;
@@ -1000,7 +912,6 @@ footer .content .content-links a i {
   background-color: #99E2D0;
   border-radius: 2px;
 }
-
 .main .menu .menu-category .dishes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1011,12 +922,10 @@ footer .content .content-links a i {
           flex-direction: column;
   gap: 15px;
 }
-
 .main .menu-action {
   text-align: center;
   margin-top: 40px;
 }
-
 @-webkit-keyframes show-menu-category {
   0% {
     opacity: 0;
@@ -1025,7 +934,6 @@ footer .content .content-links a i {
     opacity: 1;
   }
 }
-
 @keyframes show-menu-category {
   0% {
     opacity: 0;
@@ -1033,5 +941,4 @@ footer .content .content-links a i {
   100% {
     opacity: 1;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
