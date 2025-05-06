@@ -10,9 +10,7 @@
     top: 0;
     left: 0;
     z-index: 1000;
-
     animation: loader-animation 3s ease-in-out forwards;
-    pointer-events: none;
 
     .loader-circle{
         width: 120px;

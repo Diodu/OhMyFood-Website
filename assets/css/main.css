@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 header {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -38,7 +42,6 @@ header .arrow-back {
 
 header .arrow-back a {
   color: #353535;
-  text-decoration: none;
 }
 
 header .arrow-back i {
@@ -116,10 +119,6 @@ footer {
   padding: 20px 20px;
 }
 
-footer li {
-  list-style: none;
-}
-
 footer .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,7 +165,6 @@ footer .content .content-links a {
           align-items: center;
   gap: 15px;
   color: white;
-  text-decoration: none;
   font-size: 16px;
   font-weight: 400;
   white-space: nowrap;
@@ -641,7 +639,6 @@ footer .content .content-links a i {
   z-index: 1000;
   -webkit-animation: loader-animation 3s ease-in-out forwards;
           animation: loader-animation 3s ease-in-out forwards;
-  pointer-events: none;
 }
 
 .loader .loader-circle {
